@@ -102,6 +102,7 @@ function newrelic_insights_init() {
 				newrelic_add_custom_parameter("completed_purchase_revenue", $order->order_total);
 				newrelic_add_custom_parameter("completed_purchase_total_quantity", $order->total_qty);
 				newrelic_add_custom_parameter("completed_purchase_payment_method", $order->payment_method_title);
+				newrelic_add_custom_parameter("completed_purchase_city", $order->shipping_city);
 			}
 
 			
