@@ -97,10 +97,10 @@ function newrelic_insights_init() {
 						$total_qty += $item['qty'];
 					 }
 				}
-				newrelic_add_custom_parameter("completed_purchase", get_current_user_id());
-				newrelic_add_custom_parameter("completed_purchase_order_id", $order_id);
-				newrelic_add_custom_parameter("completed_purchase_revenue", $order->order_total);
-				newrelic_add_custom_parameter("completed_purchase_total_quantity", $order->total_qty);
+				newrelic_add_custom_parameter("completed_purchase", floatval(get_current_user_id()));
+				newrelic_add_custom_parameter("completed_purchase_order_id", floatval($order_id));
+				newrelic_add_custom_parameter("completed_purchase_revenue", floatval($order->order_total));
+				newrelic_add_custom_parameter("completed_purchase_total_quantity", floatval($order->total_qty));
 				newrelic_add_custom_parameter("completed_purchase_payment_method", $order->payment_method_title);
 				newrelic_add_custom_parameter("completed_purchase_city", $order->shipping_city);
 			}
