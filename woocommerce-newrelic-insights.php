@@ -3,7 +3,7 @@
 Plugin Name: NewRelic Insights for WooCommerce
 Plugin URI: http://ideaspool.nl/newrelic-insights-for-woocommerce/
 Description: Adds NewRelic Insights integration to WooCommerce by tracking key metrics
-Version: 0.0.5
+Version: 0.0.6
 Author: Kristaps Horns
 Author URI: http://ideaspool.nl
 

@@ -10,6 +10,9 @@ Tested with Woocommerce 2.1+ and Wordpress 3.8.3
 
 ## Version History
 
+v.0.0.6
+Added method to track city customer used for shipping
+
 v.0.0.5
 Added viewed_product method
 
